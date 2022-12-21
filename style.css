@@ -9,13 +9,17 @@
 :root {
   --color-dark-cyan: hsl(158, 36%, 37%);
   --color-cream: hsl(30, 38%, 92%);
+  --color-very-dark-blue: hsl(212, 21%, 14%);
+  --color-dark-grayish-blue: hsl(228, 12%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-hover: hsl(158, 42%, 18%);
 }
 
 html {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: hsl(228, 12%, 48%);
+  color: var(--color-dark-grayish-blue);
 }
 
 body {
@@ -34,7 +38,7 @@ body {
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--color-white);
   max-width: 600px;
   display: flex;
   border-radius: 10px;
@@ -90,7 +94,7 @@ img {
 
 .card__details_heading {
   font-family: "Fraunces", sans-serif;
-  color: hsl(212, 21%, 14%);
+  color: var(--color-very-dark-blue);
   font-weight: 700;
   font-size: 32px;
   line-height: 32px;
@@ -128,7 +132,7 @@ img {
   font-weight: 700;
   font-size: 32px;
   line-height: 32px;
-  color: hsl(158, 36%, 37%);
+  color: var(--color-dark-cyan);
 }
 .card__details_price-old {
   font-size: 13px;
@@ -139,8 +143,8 @@ img {
   font-family: inherit;
   font-weight: 700;
   border: none;
-  background-color: hsl(158, 36%, 37%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--color-dark-cyan);
+  color: var(--color-white);
   width: 100%;
   display: flex;
   align-items: center;
@@ -154,5 +158,5 @@ img {
 
 .card__details-button:hover,
 .card__details-button:active {
-  background-color: #1a4032;
+  background-color: var(--color-hover);
 }
